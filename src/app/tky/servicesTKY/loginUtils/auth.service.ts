@@ -37,7 +37,7 @@ export class AuthService {
   getToken() {
     let data = this.getloginData();
     if(data!=null)
-      return data.Token;
+      return data.key;
     else return '';
   }
 

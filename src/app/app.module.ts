@@ -30,6 +30,7 @@ import { AuthService } from './tky/servicesTKY/loginUtils/auth.service';
 import {AuthGuard} from './tky/servicesTKY/loginUtils/auth.guard';
 import {AuthGuardLogin} from './tky/servicesTKY/loginUtils/auth.guard.login';
 import { TokenInterceptorService } from './tky/servicesTKY/loginUtils/token-interceptor';
+// import { CrearCategoriaComponent } from './daw/categoria/crear-categoria/crear-categoria.component';
 
 
 
@@ -65,6 +66,11 @@ const appRoutes: Routes = [
         path:'tky',
         canActivate:[AuthGuard],
         loadChildren:'./tky/tky.module#tkyModel'
+    },
+    {
+        path:'daw',
+        canActivate: [AuthGuard],
+        loadChildren: './daw/daw.module#dawModel'
     },
     // {
     //     path: 'tky/prueba-comp',
@@ -103,7 +109,8 @@ const appRoutes: Routes = [
 
 @NgModule({
     declarations: [
-        AppComponent,
+        AppComponent
+      
        
         
        
@@ -160,5 +167,5 @@ const appRoutes: Routes = [
       ]
 })
 export class AppModule
-{
+{ 
 }
