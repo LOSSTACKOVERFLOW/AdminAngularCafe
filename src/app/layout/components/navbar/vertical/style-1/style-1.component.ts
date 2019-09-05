@@ -162,8 +162,8 @@ export class NavbarVerticalStyle1Component implements OnInit, OnDestroy
     displayUsername(): void{
       let jsonlogin =  this._auth.getloginData();
       if(jsonlogin!=null){
-        this.username= jsonlogin.Nombre;
-        this.perfil = jsonlogin.Perfil;
+        this.username= "Administrador"
+        this.perfil = "Cafe Real";
     }
     }
 }

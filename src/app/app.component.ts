@@ -229,21 +229,21 @@ export class AppComponent implements OnInit, OnDestroy
          
                     {
                         id      : 'admin1',
-                        title   : 'Guias',
+                        title   : 'Categorias',
                         type    : 'collapsable',
                         icon    : 'dashboard',
                         children: [
                             {
-                                id: 'crearguia',
-                                title: 'Crear guia externa',
+                                id: 'crearcategoria',
+                                title: 'Actualizaciones de categorias',
                                 type: 'item',
-                                url: '/tky/crearguia'
+                                url: '/daw/crearcategoria'
                             },
                             {
-                                id: 'mapearguia',
-                                title: 'Consultar guia externa',
+                                id: 'actualizarcategoria',
+                                title: 'Buscador de categorias',
                                 type: 'item',
-                                url: '/tky/consultguiaext'
+                                url: '/daw/actualizarcategoria'
                             }
 
                         ]
@@ -252,24 +252,24 @@ export class AppComponent implements OnInit, OnDestroy
                     
                     {
                     id      : 'admin',
-                    title   : 'Usuarios',
+                    title   : 'Combos',
                     type    : 'collapsable',
                     icon    : 'dashboard',
                     children: [
                          {
-                             id   : 'usuario',
-                             title: 'Crear usuario',
+                             id   : 'combos',
+                             title: 'Actualizaciones de combos',
                              type : 'item',
-                             icon : 'person',
-                             url  : '/pages/auth/register-2'
-                         }
-                        // {
-                        //     id   : 'payments',
-                        //     title: 'Payments',
-                        //     type : 'item',
-                        //     icon : 'attach_money',
-                        //     url  : '/apps/academy'
-                        // }
+                          
+                             url  : '/daw/combos'
+                         },
+                        {
+                            id   : 'combos1',
+                            title: 'Buscador de combos',
+                            type : 'item',
+                           
+                            url  : '/daw/buscarcombos'
+                        }
                     ]
                 }]
         // for(let i of this._auth.getloginData().Permisos){
