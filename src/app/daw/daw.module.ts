@@ -35,6 +35,9 @@ import { ActualizarCategoriaComponent } from './categoria/actualizar-categoria/a
 import { CombosComponent } from './combo/combos/combos.component';
 import { BuscarComboComponent } from './combo/buscar-combo/buscar-combo.component';
 import { ListaCategoriaComponent } from './categoria/lista-categoria/lista-categoria.component';
+import { MenuEstadisticaComponent } from './menu-estadistica/menu-estadistica.component';
+import { ClienteEstadisticaComponent } from './cliente-estadistica/cliente-estadistica.component';
+import { ComboEstadisticaComponent } from './combo-estadistica/combo-estadistica.component';
 
 const router =[ 
 {
@@ -63,7 +66,7 @@ const router =[
 
 ]
 @NgModule({
-    declarations: [CrearCategoriaComponent, ActualizarCategoriaComponent, CombosComponent, BuscarComboComponent, ListaCategoriaComponent],
+    declarations: [CrearCategoriaComponent, ActualizarCategoriaComponent, CombosComponent, BuscarComboComponent, ListaCategoriaComponent, MenuEstadisticaComponent, ClienteEstadisticaComponent, ComboEstadisticaComponent],
     imports: [RouterModule.forChild(router),
         HttpClientModule,
         MatTableModule,
