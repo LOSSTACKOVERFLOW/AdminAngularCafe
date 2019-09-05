@@ -33,6 +33,7 @@ export class ActualizarCategoriaComponent implements OnInit {
     .subscribe(
       res => {
         console.log(res);
+        listacategorias = [];
         console.log(res.Nombre);
         listacategorias.push({nombre: res.Nombre, descripcion: res.Descripcion});
         console.table(listacategorias);  
