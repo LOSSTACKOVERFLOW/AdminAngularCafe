@@ -59,6 +59,18 @@ const router =[
 {
   path: 'listacategoria',
   component: ListaCategoriaComponent
+},
+{
+  path: 'estadisticacliente',
+  component: ClienteEstadisticaComponent
+},
+{
+  path: 'estadisticacombo',
+  component: ComboEstadisticaComponent
+},
+{
+  path: 'menu',
+  component: MenuEstadisticaComponent
 }
 
 

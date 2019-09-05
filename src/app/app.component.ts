@@ -277,7 +277,32 @@ export class AppComponent implements OnInit, OnDestroy
                             url  : '/daw/buscarcombos'
                         }
                     ]
-                }]
+                },
+                {
+                    id      : 'admin3',
+                    title   : 'Estadisticas',
+                    type    : 'collapsable',
+                    icon    : 'dashboard',
+                    children: [
+                         {
+                             id   : 'estcombos',
+                             title: 'Estadisticas de clientes',
+                             type : 'item',
+                          
+                             url  : '/daw/estadisticacliente'
+                         },
+                        {
+                            id   : 'estcombo1',
+                            title: 'Estadistica de combos',
+                            type : 'item',
+                           
+                            url  : '/daw/estadisticacombo'
+                        }
+                    ] 
+                }
+            
+            
+            ]
         // for(let i of this._auth.getloginData().Permisos){
         //   console.log(i);
         //   var regconsulta = /Consultar/gi; 
