@@ -34,6 +34,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { ActualizarCategoriaComponent } from './categoria/actualizar-categoria/actualizar-categoria.component';
 import { CombosComponent } from './combo/combos/combos.component';
 import { BuscarComboComponent } from './combo/buscar-combo/buscar-combo.component';
+import { ListaCategoriaComponent } from './categoria/lista-categoria/lista-categoria.component';
 
 const router =[ 
 {
@@ -51,6 +52,10 @@ const router =[
 {
   path:'buscarcombos',
   component: BuscarComboComponent
+},
+{
+  path: 'listacategoria',
+  component: ListaCategoriaComponent
 }
 
 
@@ -58,7 +63,7 @@ const router =[
 
 ]
 @NgModule({
-    declarations: [CrearCategoriaComponent, ActualizarCategoriaComponent, CombosComponent, BuscarComboComponent],
+    declarations: [CrearCategoriaComponent, ActualizarCategoriaComponent, CombosComponent, BuscarComboComponent, ListaCategoriaComponent],
     imports: [RouterModule.forChild(router),
         HttpClientModule,
         MatTableModule,

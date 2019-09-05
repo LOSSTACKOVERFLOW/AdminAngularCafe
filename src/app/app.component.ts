@@ -244,6 +244,12 @@ export class AppComponent implements OnInit, OnDestroy
                                 title: 'Buscador de categorias',
                                 type: 'item',
                                 url: '/daw/actualizarcategoria'
+                            },
+                            {
+                                id: 'listacategoria',
+                                title: 'Lista de categorias',
+                                type: 'item',
+                                url: '/daw/listacategoria'
                             }
 
                         ]

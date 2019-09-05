@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable, Injector } from '@angular/core';
 import {Router} from '@angular/router';
 
@@ -10,8 +10,14 @@ export class APIservice{
     private _urlApiGuias = 'http://localhost:8080/tkycurier/guias';
     private _urlApiUsuario = 'http://localhost:8080/tkycurier/user';
     private _urlDawApidb = 'http://localhost:8000/apidb/';
+    private urlrestdb =  'https://categorias-1603.restdb.io/rest/categorias';
+    restdbhttpHeaders = new HttpHeaders( {   'cache-control': 'no-cache', 'x-apikey': '5d70b0088511e841cd765580' } );
     constructor(private http: HttpClient, private router: Router){
 
+    }
+
+    getHistoricoCategorias(){
+        return this.http.get<any>(this.urlrestdb,{ headers: this.restdbhttpHeaders})
     }
 
     getCombos(nombrecombo: any){

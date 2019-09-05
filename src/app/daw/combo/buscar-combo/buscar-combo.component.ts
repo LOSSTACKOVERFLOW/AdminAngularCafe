@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { APIservice } from '../../../tky/servicesTKY/services';
 
 export interface Combo {
@@ -22,6 +22,7 @@ export class BuscarComboComponent implements OnInit {
   constructor(private _service: APIservice) { }
 
   ngOnInit() {
+    
   }
   
   onSearchClear(){
@@ -31,6 +32,7 @@ export class BuscarComboComponent implements OnInit {
     .subscribe(
       res => {
         console.log(res);
+        listacombos = [];
         console.log(res.Nombre);
         listacombos.push({descripcion: res.Descripcion, precio: res.Precio});
         console.table(listacombos);  
@@ -40,8 +42,16 @@ export class BuscarComboComponent implements OnInit {
       err => {console.log(err);
       }
       );
+
+      
     
    
   }
+  
+
+  // ngOnDestroy(): void {
+  //   listacombos = null;
+    
+  // }
 
 }
