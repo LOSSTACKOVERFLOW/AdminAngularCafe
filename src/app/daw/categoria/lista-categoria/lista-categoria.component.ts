@@ -34,6 +34,7 @@ export class ListaCategoriaComponent implements OnInit {
         console.log(res);
         console.log(this.categoriares);
         console.log(this.categoriares[0].idcategoria);
+        listacategorias =[];
         this.categoriares.forEach(elem => {
           listacategorias.push({nombre: elem.idcategoria, descripcion: elem.descripcion});
         console.table(listacategorias); 
