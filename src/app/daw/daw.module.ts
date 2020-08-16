@@ -38,6 +38,8 @@ import { ListaCategoriaComponent } from './categoria/lista-categoria/lista-categ
 import { MenuEstadisticaComponent } from './menu-estadistica/menu-estadistica.component';
 import { ClienteEstadisticaComponent } from './cliente-estadistica/cliente-estadistica.component';
 import { ComboEstadisticaComponent } from './combo-estadistica/combo-estadistica.component';
+import { ChartsModule } from 'ng2-charts';
+
 
 const router =[ 
 {
@@ -101,7 +103,8 @@ const router =[
         MatStepperModule,
         FormsModule,
         ReactiveFormsModule,
-        MatGridListModule
+        MatGridListModule,
+        ChartsModule,
     ],
     providers: [AuthService,TokenInterceptorService,AuthGuard,AuthGuardLogin,APIservice,DialogService,
         {
